@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "AutoScroll",
+  "description": "Press / to focus on search bar",
+  "version": "1.0.1",
+  "browser_action": {
+    "default_title": "AutoScroll",
+    "default_icon": "./icons/icon.png",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["scripts/content_script.js", "scripts/Shortcuts.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

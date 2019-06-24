@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,500"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <input
+        type="range"
+        id="speed-input"
+        name="speed"
+        min="1"
+        value="1"
+        max="10"
+      />
+      <input
+        type="range"
+        id="rate-input"
+        name="rate"
+        min="1"
+        value="20"
+        max="60"
+      />
+
+      <button id="start-scrolling">Scroll</button>
+      <button id="stop-scrolling">Stop</button>
+    </div>
+  </body>
+  <script src="scripts/script.js" charset="utf-8"></script>
+</html>
